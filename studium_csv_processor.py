@@ -106,7 +106,7 @@ def split_author_names(name_string: str):
 def add_publication(csv: DataFrame):
     publications = []
     for index, row in csv.iterrows():
-        publications.append(f"{row["jaar"]} / {row["issue"]}")
+        publications.append(f"{row['jaar']} / {row['issue']}")
 
     csv["publication"] = publications
 
